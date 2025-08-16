@@ -77,7 +77,7 @@ class GCM:
                 hash_block[i] ^= element[i]
             # 乘法运算：
             hash_block_int = self._poly_mul(int.from_bytes(hash_block, byteorder='big', signed=False), 
-                                                      int.from_bytes(self._H, byteorder='big', signed=False))
+                                            int.from_bytes(self._H, byteorder='big', signed=False))
             hash_block = bytearray(hash_block_int.to_bytes(length=16, byteorder='big', signed=False))
         return hash_block
     
