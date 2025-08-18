@@ -39,9 +39,9 @@ AES-GCM
 2. **基础使用**：直接运行各模块代码即可查看算法中间过程，例如：
    ```bash
    # 运行S盒生成测试
-   python -m SBox.Box.py
+   python -m SBox.Box
    # 运行GCM完整功能测试
-   python GCMmodules.GCM.py
+   python GCMmodules.GCM
    ```
 3. **测试说明**：各个核心模块文件中均包含与Python标准库`cryptography`的对比测试，如需执行需安装：
    ```bash
